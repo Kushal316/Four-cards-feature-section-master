@@ -1,0 +1,139 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  font-family:  'Poppins', sans-serif;
+  font-size: 15px;
+
+}
+
+.main-header{
+  padding-top: 70px;
+  background-color: yellow;
+}
+
+header{
+    /*margin-bottom: 5%;*/
+
+  }
+
+  h1{
+  /*  margin: 5% auto 1%;
+    font-size: x-large;
+    opacity: 0.3;
+    font-weight: 400;*/
+  }
+
+  h2{
+    /*margin: 1% auto 5%;
+    font-size: x-large;*
+  */
+}
+
+
+.main_header__p{
+    font-size: 15px;
+    margin: 5%;
+}
+div{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow:-1px 5px 10px 4px whitesmoke;
+    margin: 5% auto;
+    width:50%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main-sec__sup {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.main-sec__temb{
+    border-top: 3px solid hsl(34, 97%, 64%); ;
+}
+.main-sec__kar{
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+.main-sec__calc {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+img {
+    width: 5vw;
+   /* height: 5vh;*/
+    align-self: flex-end;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+.main-sec h3{
+  align-self: flex-start;
+    margin-left: 5%;
+    margin-top: 11%;
+}
+.main-sec p{
+  text-align: start;
+   /* align-self: flex-start; */
+   margin-left: 5%;
+   margin-top: 0%;
+   font-size: small;
+}
+@media only screen and (min-width: 580px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div {
+        width: 47%;
+    }
+
+}  
+
+@media only screen and (min-width: 840px) {
+    body {
+        background-color: hsl(55, 30%, 97%);
+    }
+     header {
+        width: 50%;
+    margin: auto;
+    }
+    
+     .header__p{
+      text-align: center;
+    }
+     section {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    section div {
+        width: 80%;
+    }
+    .main-sec__sup{
+    margin-top: 0;
+    grid-area: 1/2;
+    }
+    .main-sec__temb {
+        grid-area: 2/1;
+        margin-top: -30%;
+    }
+   
+    .main-sec__calc {
+     grid-area: 2/3;
+     margin-top: -30%;
+     
+    }
+     .main-sec__kar{
+        grid-area: 2/2;
+    }
+    img {
+        width: 5vw;
+    }
+    
+}
+
+
+
